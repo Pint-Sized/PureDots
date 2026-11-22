@@ -27,6 +27,7 @@
     ./swaync.nix
     ./swayosd.nix
     ./themes/themes.nix
+    ./tidal-hifi.nix
     ./ulauncher.nix
     ./vesktop.nix
     ./virtualisation.nix
