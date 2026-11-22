@@ -1,4 +1,3 @@
-{ ... }:
 {
   programs.nixvim.plugins = {
     lspsaga = {
@@ -23,6 +22,5 @@
         };
       };
     };
-
   };
 }

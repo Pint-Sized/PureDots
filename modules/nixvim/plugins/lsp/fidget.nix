@@ -1,4 +1,3 @@
-{ ... }:
 {
   programs.nixvim.plugins = {
     fidget = {
@@ -14,6 +13,5 @@
         };
       };
     };
-
   };
 }
