@@ -5,6 +5,7 @@
       enable = true;
       servers = {
         nixd.enable = true;
+        statix.enable = true;
         bashls.enable = true;
         pyright.enable = true;
         rust_analyzer = {
