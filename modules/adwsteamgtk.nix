@@ -11,7 +11,7 @@ in
 {
   stylix.targets.gtk.enable = true;
 
-  home.file.".config/AdwSteamGtk/custom.css".text = # css
+  xdg.config."AdwSteamGtk/custom.css".text = # css
     ''
       * {
         font-family: "${userSettings.fontPropo}", sans-serif !important;
@@ -20,7 +20,6 @@ in
       @define-color window_bg_color #${colors.base01};
       @define-color view_bg_color #${colors.base00};
 
-      /* THE FIX: Explicitly target the sidebar */
       @define-color sidebar_bg_color #${colors.base01};
       @define-color sidebar_fg_color #${colors.base05};
       @define-color sidebar_backdrop_color #${colors.base01};
@@ -42,7 +41,6 @@ in
         --view-bg-color: #${colors.base00};
         --view-fg-color: #${colors.base05};
         
-        /* THE FIX: Explicitly target the sidebar hex values */
         --sidebar-bg-color: #${colors.base01};
         --sidebar-fg-color: #${colors.base05};
 
@@ -62,7 +60,6 @@ in
         --adw-view-bg-rgb: ${colors.base00-rgb-r}, ${colors.base00-rgb-g}, ${colors.base00-rgb-b};
         --adw-view-fg-rgb: ${colors.base05-rgb-r}, ${colors.base05-rgb-g}, ${colors.base05-rgb-b};
         
-        /* THE FIX: Explicitly target the sidebar RGB values */
         --adw-sidebar-bg-rgb: ${colors.base01-rgb-r}, ${colors.base01-rgb-g}, ${colors.base01-rgb-b};
         --adw-sidebar-fg-rgb: ${colors.base05-rgb-r}, ${colors.base05-rgb-g}, ${colors.base05-rgb-b};
 

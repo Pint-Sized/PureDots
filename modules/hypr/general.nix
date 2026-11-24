@@ -28,9 +28,7 @@ in
           passes = 3;
           noise = 0;
           new_optimizations = false;
-          #brightness = 1.5;
           brightness = 1;
-          #contrast = 1.5;
           contrast = 1;
           xray = false;
         };
@@ -50,7 +48,6 @@ in
         ];
       };
       dwindle = {
-        #pseudotile = true;
         preserve_split = true;
         force_split = 2;
         smart_resizing = false;
