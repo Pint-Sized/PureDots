@@ -5,11 +5,6 @@
   ...
 }:
 {
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    libsecret
-    glib
-  ];
   environment.systemPackages =
     (with pkgs; [
       stremio-linux-shell
@@ -96,6 +91,13 @@
       python-lsp-server
     ]);
   programs = {
+    nix-l = {
+      enable = true;
+      libraries = with pkgs; [
+        libsecret
+        glib
+      ];
+    };
     git.enable = true;
     fish.enable = true;
     gamemode.enable = true;
